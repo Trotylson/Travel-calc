@@ -1,20 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
     public partial class Form1 : Form
     {
-        public double kilometersDifference;
-        public double usedFuel;
-        public double sum;
+        private double kilometersDifference;
+        private double usedFuel;
+        private double sum;
 
         public Form1()
         {
@@ -70,32 +63,12 @@ namespace WindowsFormsApp2
                 return;
             }
         }
-
-
-
-
-
-
-
-
-
-
-        //-------------------------------------------------------------------------------
-        // unused Form1 codes
-        //-------------------------------------------------------------------------------
-        private void meter2TextBox_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void label7_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Program zaprojektowany i stworzony przez Damian Jeździkowski.", "Dziękuję ;)");
+            MessageBox.Show("Created by Damian Jeździkowski.", "Thank you :)");
         }
+        private void meter2TextBox_TextChanged(object sender, EventArgs e) { }
+
+        private void Form1_Load(object sender, EventArgs e) { }
     }
 }
